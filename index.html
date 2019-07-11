@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best of Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        .wrapper {
+            margin-bottom: 100px;
+        }
+        .btn.btn-primary.single {
+            background-color: lightskyblue !important; 
+        }
+    </style>
+    <div class="wrapper container">
+        <h2 class="display-4">Layout &mdash; Grid System</h2>
+        <p>Bootstrap uses 12-column grid system. Columns must be wrapped in a <b>"row"</b> class. The <b>"container"</b>
+            class is what centers its children elements in the center of the page.</p>
+        <div class="row">
+            <div class="col p-4 m-1 bg-info">1</div>
+            <div class="col p-4 m-1 bg-info">2</div>
+            <div class="col p-4 m-1 bg-info">3</div>
+            <div class="col p-4 m-1 bg-info">4</div>
+            <div class="col p-4 m-1 bg-info">5</div>
+            <div class="col p-4 m-1 bg-info">6</div>
+            <div class="col p-4 m-1 bg-info">7</div>
+            <div class="col p-4 m-1 bg-info">8</div>
+            <div class="col p-4 m-1 bg-info">9</div>
+            <div class="col p-4 m-1 bg-info">10</div>
+            <div class="col p-4 m-1 bg-info">11</div>
+            <div class="col p-4 m-1 bg-info">12</div>
+        </div>
+        <br />
+        <p>By themselves, the <b>"col"</b> class will take up the width of its container. These two columns share the
+            width of their parent div equally.</p>
+        <div class="row">
+            <div class="col p-4 bg-primary m-1">1</div>
+            <div class="col p-4 bg-primary m-1">2</div>
+        </div>
+    </div>
+    <div class="wrapper container">
+        <h2 class="display-4">Components &mdash; Buttons</h2>
+        <p>Buttons come in 8 colors and three sizes. These are <b>not</b> links or "a href" tags.</p>
+        <div class="container mb-3">
+            <button type="button" class="btn btn-primary single">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+        </div>
+        <div class="container mb-3">
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-primary">Default button</button>
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        </div>
+        <p>These are links posing as button.</p>
+        <div class="container mb-3">
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <a class="btn btn-secondary" href="#" role="button">Link</a>
+            <a class="btn btn-success" href="#" role="button">Link</a>
+        </div>
+    </div>
+    <div class="wrapper container">
+        <h2 class="display-4">Components &mdash; Forms</h2>
+        <p>Here is a simple form with a Submit button. These input fields take up the width of their parent.</p>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <br />
+        <p>The input fields come in three sizes.</p>
+        <div class="container">
+            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+            <input class="form-control" type="text" placeholder="Default input">
+            <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+        </div>
+        <br />
+        <p>To easily shorten their width by half, add <b>"w-50"</b> to the input's classes.</p>
+        <div class="container">
+            <input class="form-control w-50" type="text" placeholder="Default input">
+        </div>
+        <br />
+        <p>Here is a form with labels beside their input field.</p>
+        <div class="container">
+            <form>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="wrapper container">
+        <h2 class="display-4">Components &mdash; Jumbotron</h2>
+        <p>Jumbotrons make a big statement on main pages. They come in small and full-size:</p>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                    attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.
+                </p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+            </p>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="display-4">Components &mdash; Navbar</h2>
+        <p>Navbars sit at the top of the site at full width and act as navigation between the different pages.</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Website Title</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <div class="container">
+        <p>This one splits two elements to the left and right.</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="#">Website Title</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                
+            </ul>
+            <span class="navbar-text">Welcome back, {{ user }} <a class="btn btn-sm btn-light text-dark" href="#"
+                    role="button">Log out</a></span>
+        </div>
+    </nav>
+    <br />
+    <div class="wrapper container mt-4">
+        <h2 class="display-4">Components &mdash; Cards w/ Grid System</h2>
+        <p>These are customizable containers that can expand and contract on the page. Depending on the column width you
+            set, any cards that add up over 12 will be wrapped to the next line.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card bg-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">col-6
+                            </p>
+                            <a href="#" class="btn btn-light">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card bg-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">col-6
+                            </p>
+                            <a href="#" class="btn btn-light">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card bg-info mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">col-4
+                                </p>
+                                <a href="#" class="btn btn-light">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-primary mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">col-4
+                                </p>
+                                <a href="#" class="btn btn-secondary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-light mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">col-4
+                                </p>
+                                <a href="#" class="btn btn-danger">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-warning mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">col-4
+                                </p>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper container">
+        <h2 class="display-4">Utilities &mdash; Text, Color, Margin, and Padding</h2>
+        <div class="container">
+            <h4>Handy Text Classes</h4>
+            <div class="container p-2 bg-light">
+                <p class="text-left">Left aligned text on all viewport sizes.</p>
+                <p class="text-center">Center aligned text on all viewport sizes.</p>
+                <p class="text-right">Right aligned text on all viewport sizes.</p>
+            </div>
+            <br />
+            <div class="container p-2 bg-light">
+                <p class="text-lowercase">Lowercased text.</p>
+                <p class="text-uppercase">uppercased text.</p>
+                <p class="text-capitalize">capitalized text.</p>
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <h4>Handy Color Classes - Text</h4>
+            <div class="container">
+                <p class="text-primary">.text-primary</p>
+                <p class="text-secondary">.text-secondary</p>
+                <p class="text-success">.text-success</p>
+                <p class="text-danger">.text-danger</p>
+                <p class="text-warning">.text-warning</p>
+                <p class="text-info">.text-info</p>
+                <p class="text-light bg-dark">.text-light</p>
+                <p class="text-dark">.text-dark</p>
+                <p class="text-body">.text-body</p>
+                <p class="text-muted">.text-muted</p>
+                <p class="text-white bg-dark">.text-white</p>
+                <p class="text-black-50">.text-black-50</p>
+                <p class="text-white-50 bg-dark">.text-white-50</p>
+            </div>
+            <br />
+            <h4>Background</h4>
+            <div class="container">
+                <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+                <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <h4>Handy Margin/Padding Classes</h4>
+            <p>m-* and p-* classes allow you to add margin or padding to any element based on the <a href="https://www.sitepoint.com/understanding-and-using-rem-units-in-css/">rem</a> unit of size. These sizes range from 1 to 5, 1 being the least amoutn of spacing.
+                <ul>
+                    <li>m &mdash; all margins</li>
+                    <li>mt &mdash; margin-top</li>
+                    <li>mr &mdash; margin-right</li>
+                    <li>ml &mdash; margin-left</li>
+                    <li>mx &mdash; margin-left and margin-right</li>
+                    <li>mb &mdash; margin-bottom</li>
+                    <li>my &mdash; margin-top and margin-bottom</li>
+                </ul>
+            </p>
+            <p>For example: m-1 give the element 1rem of margin all away around. mb-3 gives the element a margin-bottom of 3rems</p>
+            <p>
+                <ul>
+                    <li>p &mdash; all paddings</li>
+                    <li>pt &mdash; padding-top</li>
+                    <li>pr &mdash; padding-right</li>
+                    <li>pl &mdash; padding-left</li>
+                    <li>px &mdash; padding-left and padding-right</li>
+                    <li>pb &mdash; padding-bottom</li>
+                    <li>py &mdash; padding-top and padding-bottom</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
